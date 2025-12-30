@@ -309,8 +309,8 @@ db.users.updateOne(
 
 | Service | URL | Status |
 |---------|-----|--------|
-| **Frontend** | [user-management-system-sigma-jade.vercel.app](https://user-management-system-sigma-jade.vercel.app) | ✅ Live |
-| **Backend API** | [user-management-backend-y2h0.onrender.com](https://user-management-backend-y2h0.onrender.com) | ✅ Live |
+| **Frontend** | [user-management-system-88r20yo2d.vercel.app](https://user-management-system-88r20yo2d.vercel.app) | ✅ Live |
+| **Backend API** | [user-management-backend-y2h9.onrender.com](https://user-management-backend-y2h9.onrender.com) | ✅ Live |
 | **Database** | MongoDB Atlas (Cloud) | ✅ Connected |
 
 ### 🔐 Test Credentials
