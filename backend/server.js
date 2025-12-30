@@ -16,15 +16,19 @@ connectDB();
 const allowedOrigins = [
     process.env.CLIENT_URL,
     'http://localhost:5173',
-    'https://user-management-system-sigma-jade.vercel.app'
+    'https://user-management-system-sigma-jade.vercel.app',
+    'https://user-management-system-88r20yo2d.vercel.app'
 ];
 
 app.use(cors({
     origin: function (origin, callback) {
         // Allow requests with no origin (mobile apps, Postman, etc.)
         if (!origin) return callback(null, true);
-
-        if (allowedOrigins.indexOf(origin) !== -1 || allowedOrigins.includes('*')) {
+        
+        // Allow all Vercel preview deployments
+        if (origin.includes('vercel.app') || origin.includes('localhost')) {
+            callback(null, true);
+        } else if (allowedOrigins.indexOf(origin) !== -1 || allowedOrigins.includes('*')) {
             callback(null, true);
         } else {
             callback(new Error('Not allowed by CORS'));
