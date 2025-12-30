@@ -307,13 +307,19 @@ db.users.updateOne(
 
 ## 🌐 Live Deployment Links
 
-> Update these links after deployment
+| Service | URL | Status |
+|---------|-----|--------|
+| **Frontend** | [user-management-system-sigma-jade.vercel.app](https://user-management-system-sigma-jade.vercel.app) | ✅ Live |
+| **Backend API** | [user-management-backend-y2h0.onrender.com](https://user-management-backend-y2h0.onrender.com) | ✅ Live |
+| **Database** | MongoDB Atlas (Cloud) | ✅ Connected |
 
-| Service | URL |
-|---------|-----|
-| **Frontend** | `https://your-app.vercel.app` |
-| **Backend API** | `https://your-api.render.com` |
-| **Database** | MongoDB Atlas (Cloud) |
+### 🔐 Test Credentials
+
+**Admin Account:**
+- Email: `admin@userhub.com`
+- Password: `Admin@123!`
+
+> **Note**: Create your own admin account using the script: `node backend/scripts/createAdmin.js`
 
 ---
 
