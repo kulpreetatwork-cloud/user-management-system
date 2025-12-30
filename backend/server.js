@@ -24,7 +24,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 
-// Health check endpoint
+// Health check endpoints (both root and /api for flexibility)
+app.get('/health', (req, res) => {
+    res.json({
+        status: 'ok',
+        message: 'User Management API is running',
+        timestamp: new Date().toISOString()
+    });
+});
+
 app.get('/api/health', (req, res) => {
     res.json({
         status: 'ok',
